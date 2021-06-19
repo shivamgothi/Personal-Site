@@ -10,6 +10,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
+#more1, #less1, #more2, #less2, #more3, #less3, #more4, #less4,  #more5, #less5, #more6, #less6 
+{
+margin:0px;
+}
+#more1:hover , #less1:hover, #more2:hover , #less2:hover, #more3:hover , #less3:hover, #more4:hover , #less4:hover, #more5:hover , #less5:hover, #more6:hover , #less6:hover
+{
+color:#0345fc;
+}
+
+
+.contentHeight
+{
+height:60px;
+overFlow:hidden;
+}
+.xyz
+{
+margin=0px;
+}
+
+
 .skillsHeading
 {
 padding-top:3px;
@@ -24,9 +45,114 @@ letter-spacing:1px;
 </style>
 <script>
 $(()=>{
+
 $("h2").addClass("skillsHeading");
 $("p").addClass("skillsDescription");
 $("#copyright").removeClass("skillsDescription");
+
+
+$("#more1").show();
+$("#p1").hide();
+$("#less1").hide();
+$("#more2").show();
+$("#p2").hide();
+$("#less2").hide();
+$("#more3").show();
+$("#p3").hide();
+$("#less3").hide();
+$("#more4").show();
+$("#p4").hide();
+$("#less4").hide();
+$("#more5").show();
+$("#p5").hide();
+$("#less5").hide();
+$("#more6").show();
+$("#p6").hide();
+$("#less6").hide();
+
+
+$("#more1").click((ev)=>{
+ev.preventDefault();
+$("#more1").hide();
+$("#p1").show();
+$("#less1").show();
+});
+$("#less1").click((ev)=>{
+ev.preventDefault();
+$("#less1").hide();
+$("#p1").hide();
+$("#more1").show();
+});
+
+
+$("#more2").click((ev)=>{
+ev.preventDefault();
+$("#more2").hide();
+$("#p2").show();
+$("#less2").show();
+});
+$("#less2").click((ev)=>{
+ev.preventDefault();
+$("#less2").hide();
+$("#p2").hide();
+$("#more2").show();
+});
+
+$("#more3").click((ev)=>{
+ev.preventDefault();
+$("#more3").hide();
+$("#p3").show();
+$("#less3").show();
+});
+$("#less3").click((ev)=>{
+ev.preventDefault();
+$("#less3").hide();
+$("#p3").hide();
+$("#more3").show();
+});
+
+
+$("#more4").click((ev)=>{
+ev.preventDefault();
+$("#more4").hide();
+$("#p4").show();
+$("#less4").show();
+});
+$("#less4").click((ev)=>{
+ev.preventDefault();
+$("#less4").hide();
+$("#p4").hide();
+$("#more4").show();
+});
+
+$("#more5").click((ev)=>{
+ev.preventDefault();
+$("#more5").hide();
+$("#p5").show();
+$("#less5").show();
+});
+$("#less5").click((ev)=>{
+ev.preventDefault();
+$("#less5").hide();
+$("#p5").hide();
+$("#more5").show();
+});
+
+$("#more6").click((ev)=>{
+ev.preventDefault();
+$("#more6").hide();
+$("#p6").show();
+$("#less6").show();
+});
+$("#less6").click((ev)=>{
+ev.preventDefault();
+$("#less6").hide();
+$("#p6").hide();
+$("#more6").show();
+});
+
+
+
 });
 </script>
 </head>
@@ -60,31 +186,56 @@ $("#copyright").removeClass("skillsDescription");
 
 <div class='skill-page container-fluid'>
 <h2>React</h2>
-<p>React (also known as React.js or ReactJS) is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.</p>
+<p>React (also known as React.js or ReactJS) is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies.<a id="more1" href="">read more</a> 
+<span id="p1">React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.</span>
+<a id='less1' href="">less</a>
+</p>
 
 <h2>jQuery</h2>
-<p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having at least 3 to 4 times more usage than any other JavaScript library.
-jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.</p>
+<p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License.<a id="more2" href="">read more</a> 
+<span id="p2">As of May 2019, jQuery is used by 73% of the 10 million most popular websites. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having at least 3 to 4 times more usage than any other JavaScript library.
+jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.</span>
+<a id='less2' href="">less</a>
+</p>
+
 
 <h2>JavaScript</h2>
-<p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
-JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects.</p>
+<p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers).<a id="more3" href="" id='ml'>read more</a> 
+<span id="p3">Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects.</span>
+<a id='less3' href="">less</a>
+</p>
 
 <h2>Bootstrap</h2>
-<p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites. It solves many problems which we had once, one of which is the cross-browser compatibility issue. Nowadays, the websites are perfect for all the browsers (IE, Firefox and Chrome) and for all sizes of screens (Desktop, Tablets, Phablets, and Phones). All thanks to Bootstrap developers -Mark Otto and Jacob Thornton of Twitter, though it was later declared to be an open-source project.</p>
+<p>
+Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.<a id="more4" href="">read more</a> 
+<span id="p4">It solves many problems which we had once, one of which is the cross-browser compatibility issue. Nowadays, the websites are perfect for all the browsers (IE, Firefox and Chrome) and for all sizes of screens (Desktop, Tablets, Phablets, and Phones). All thanks to Bootstrap developers -Mark Otto and Jacob Thornton of Twitter, though it was later declared to be an open-source project.</span>
+<a id='less4' href="">less</a>
+</p>
+
 
 <h2>CSS</h2>
-<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
-CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
-Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.</p>
+<p>
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.<a id="more5" href="">read more</a> 
+<span id="p5">CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.
+</span>
+<a id='less5' href="">less</a>
+</p>
+
 
 <h2>HTML</h2>
 <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
-Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.<a id="more6" href="">read more</a> 
+<span id="p6">HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
 HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as &lt;img&gt; and &lt;input&gt; directly introduce content into the page. Other tags such as &lt;p&gt; surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
-HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.</p>
-</div>
+HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.
+</span>
+<a id='less6' href="">less</a>
+</p>
 
+
+</div>
 <div class="bottom-container">
   <a class="footer-link" href="https://www.linkedin.com/in/shivam-gothi-98575711a/">LinkedIn</a>
   <a class="footer-link" href="https://www.instagram.com/shivapatidar_sp/">Instagram</a>
